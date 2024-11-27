@@ -50,8 +50,8 @@ wp core install \
   #Instalamos un plugin
   wp plugin install wps-hide-login --activate --path=$WORDPRESS_DIRECTORY --allow-root
 
-  #Configuramosel plugin de Url
-  wp option update whl_page "$WORDPRESS_HIDE_LOGIN" --path=$WORDPRESS_DIRECTORY --allow-root
+  #Configuramos el plugin de Url
+  wp option update whl_page "$WORDPRESS_HIDE_LOGIN_URL" --path=$WORDPRESS_DIRECTORY --allow-root
   
   # Enlaces permanentes
   wp rewrite structure '/%postname%/' --path=$WORDPRESS_DIRECTORY --allow-root
