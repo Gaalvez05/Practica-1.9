@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Para mostrar los comandos que se van ejecutando
+# Configuramos para mostrar los comandos y finalizar si hay error
 set -ex
 
 # Actualizamos los repositorios
 apt update
 
-# Actualizar los paquetes
+# Actualiza los paquetes
 apt upgrade -y
 
 # Instalamos el servidor web Apache
@@ -18,7 +18,7 @@ a2enmod rewrite
 # Copiamos el archivo de configuración de Apache
 cp ../conf/000-default.conf /etc/apache2/sites-available
 
-# Instalamos PHP y los modulos de PHP para Apache y MySQL
+# Instalamos PHP y algunos módulos de php para Apache y MySQL
 apt install php libapache2-mod-php php-mysql -y
 
 # Reiniciamos el servicio de Apache

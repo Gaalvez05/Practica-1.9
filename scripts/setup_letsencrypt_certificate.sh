@@ -1,23 +1,23 @@
 #!/bin/bash
 
-#Mostrar los comandos que se van ejecutando 
+#Mostrar los comandos que se van ejecutando
 set -ex
 
-# Importamos las variables de entorno
+#Importamos las variables de entorno
 source .env
 
-#Instalamos y actualizamos snap core
-snap install core
-snap refresh core
+# Instalamos y Actualizamos snap
+sudo snap install core
+sudo snap refresh core
 
-#Eliminamos si existiese alguna instalación previa de certbot con apt.
+# Eliminamos instalaciones previas de cerbot con apt
 apt remove certbot -y
 
-#Instalamos el cliente de Certbot con snapd.
+# Instalamos el cliente de cerbot
 snap install --classic certbot
 
-# Creamos una alias para el comando certbot.
-ln -fs /snap/bin/certbot /usr/bin/certbot
+# Creamos un alias para el comando cerbot
+ln -fs /snap/bin/cerbot /usr/bin/cerbot
 
-#Solicitamos un certificado a Let's Encrypt
-certbot --apache -m $LE_EMAIL --agree-tos --no-eff-email -d $LE_DOMAIN --non-interactive
+# Solicitamos un certificado a Let´s Encrypt
+sudo certbot --apache -m $LE_EMAIL --agree-tos --no-eff-email -d $LE_DOMAIN --non-interactive
