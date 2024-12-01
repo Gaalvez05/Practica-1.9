@@ -327,3 +327,5 @@ mysql -u root <<< "GRANT ALL PRIVILEGES ON $WORDPRESS_DB_NAME.* TO $WORDPRESS_DB
 ```
 
 Configuramos la base de datos de MySQL, donde la IP para acceder debera ser la IP de la maquina Frontend.
+
+![](/img/Captura%20de%20pantalla%202024-12-01%20210015.png)
