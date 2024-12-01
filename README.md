@@ -156,6 +156,7 @@ sudo ln -fs /snap/bin/certbot /usr/bin/certbot
 ```
 
 Y este sería el resultado:
+
 ![](/img/Captura%20de%20pantalla%202024-12-01%20202606.png)
 
 # 1.3 Despliegue de WordPress a través de WP-CLI con el archivo `deploy_wordpress_frontend.sh`
