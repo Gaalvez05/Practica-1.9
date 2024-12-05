@@ -2,6 +2,7 @@
 Repositorio para la práctica 1.9. de IAW
 
 Antonio Jesus Galvez Rodriguez
+
 Durante esta practica aprenderemos a automatizar la instalación y configuración de una aplicación web LAMP en dos máquinas virtuales EC2 de Amazon Web Services (AWS). En una de las máquinas deberá instalar Apache HTTP Server y los módulos necesarios de PHP y en la otra máquina deberá instalar MySQL Server.
 
 # 1 Maquina Frontend
